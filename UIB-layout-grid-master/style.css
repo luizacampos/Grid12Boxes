@@ -1,0 +1,82 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    border: fuchsia solid;
+    background-color: mediumpurple;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-template-areas:
+    "one two two three"
+    "four five six six"
+    "seven nine eight ten"
+    "eleven nine twelve ten"
+}
+
+.container .box{
+    text-align: center;
+    margin: 5px;
+    padding-top: 5px;
+}
+
+.container .box:nth-of-type(1){
+    grid-area: one;
+    background-color: white;
+}
+
+.container .box:nth-of-type(2){
+    grid-area: two;
+    background-color: mediumpurple;
+}
+
+.container .box:nth-of-type(3){
+    grid-area: three;
+    background-color: white;
+}
+
+.container .box:nth-of-type(4){
+    grid-area: four;
+    background-color: white;
+}
+
+.container .box:nth-of-type(5){
+    grid-area: five;
+    background-color: white;
+}
+
+.container .box:nth-of-type(6){
+    grid-area: six;
+    background-color: green;
+}
+
+.container .box:nth-of-type(7){
+    grid-area: seven;
+    background-color: white;
+}
+
+.container .box:nth-of-type(8){
+    grid-area: eight;
+    background-color: white;
+}
+
+.container .box:nth-of-type(9){
+    grid-area: nine;
+    background-color: orange;
+}
+
+.container .box:nth-of-type(10){
+    grid-area: ten;
+    background-color: darkmagenta;
+}
+
+.container .box:nth-of-type(11){
+    grid-area: eleven;
+    background-color: white;
+}
+
+.container .box:nth-of-type(12){
+    grid-area: twelve;
+    background-color: white;
+}
